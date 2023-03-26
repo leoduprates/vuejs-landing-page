@@ -1,0 +1,19 @@
+{
+	"name": "Vue.js Development",
+	"build": {
+		"context": "..",
+		"dockerfile": "../Dockerfile"
+	},
+	"runArgs": [
+		"--publish=3000:8080"
+	],
+	"customizations": {
+		"vscode": {
+			"extensions": [
+				"octref.vetur",
+				"dbaeumer.vscode-eslint",
+				"Vue.volar"
+			]
+		}
+	}
+}
