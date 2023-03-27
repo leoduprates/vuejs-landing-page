@@ -1,71 +1,16 @@
 <template>
-  <v-container>
+  <v-container id="section2">
     <v-row>
-      <v-col id="section2">
-        <v-subheader class="text-h4">About Us</v-subheader>
-        <p>
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptates
-          libero, alias reprehenderit aut debitis eos vero, odio recusandae nam
-          quisquam ipsum sunt nostrum assumenda. Non dolorum reiciendis amet
-          consequuntur aperiam. Lorem ipsum dolor sit, amet consectetur
-          adipisicing elit. Voluptates libero, alias reprehenderit aut debitis
-          eos vero, odio recusandae nam quisquam ipsum sunt nostrum assumenda.
-          Non dolorum reiciendis amet consequuntur aperiam. Lorem ipsum dolor
-          sit, amet consectetur adipisicing elit. Voluptates libero, alias
-          reprehenderit aut debitis eos vero, odio recusandae nam quisquam ipsum
-          sunt nostrum assumenda. Non dolorum reiciendis amet consequuntur
-          aperiam. Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-          Voluptates libero, alias reprehenderit aut debitis eos vero, odio
-          recusandae nam quisquam ipsum sunt nostrum assumenda. Non dolorum
-          reiciendis amet consequuntur aperiam. Lorem ipsum dolor sit, amet
-          consectetur adipisicing elit. Voluptates libero, alias reprehenderit
-          aut debitis eos vero, odio recusandae nam quisquam ipsum sunt nostrum
-          assumenda. Non dolorum reiciendis amet consequuntur aperiam. Lorem
-          ipsum dolor sit, amet consectetur adipisicing elit. Voluptates libero,
-          alias reprehenderit aut debitis eos vero, odio recusandae nam quisquam
-          ipsum sunt nostrum assumenda. Non dolorum reiciendis amet consequuntur
-          aperiam. Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-          Voluptates libero, alias reprehenderit aut debitis eos vero, odio
-          recusandae nam quisquam ipsum sunt nostrum assumenda. Non dolorum
-          reiciendis amet consequuntur aperiam. Lorem ipsum dolor sit, amet
-          consectetur adipisicing elit. Voluptates libero, alias reprehenderit
-          aut debitis eos vero, odio recusandae nam quisquam ipsum sunt nostrum
-          assumenda. Non dolorum reiciendis amet consequuntur aperiam. Lorem
-          ipsum dolor sit, amet consectetur adipisicing elit. Voluptates libero,
-          alias reprehenderit aut debitis eos vero, odio recusandae nam quisquam
-          ipsum sunt nostrum assumenda. Non dolorum reiciendis amet consequuntur
-          aperiam. Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-          Voluptates libero, alias reprehenderit aut debitis eos vero, odio
-          recusandae nam quisquam ipsum sunt nostrum assumenda. Non dolorum
-          reiciendis amet consequuntur aperiam. Lorem ipsum dolor sit, amet
-          consectetur adipisicing elit. Voluptates libero, alias reprehenderit
-          aut debitis eos vero, odio recusandae nam quisquam ipsum sunt nostrum
-          assumenda. Non dolorum reiciendis amet consequuntur aperiam. Lorem
-          ipsum dolor sit, amet consectetur adipisicing elit. Voluptates libero,
-          alias reprehenderit aut debitis eos vero, odio recusandae nam quisquam
-          ipsum sunt nostrum assumenda. Non dolorum reiciendis amet consequuntur
-          aperiam. Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-          Voluptates libero, alias reprehenderit aut debitis eos vero, odio
-          recusandae nam quisquam ipsum sunt nostrum assumenda. Non dolorum
-          reiciendis amet consequuntur aperiam. Lorem ipsum dolor sit, amet
-          consectetur adipisicing elit. Voluptates libero, alias reprehenderit
-          aut debitis eos vero, odio recusandae nam quisquam ipsum sunt nostrum
-          assumenda. Non dolorum reiciendis amet consequuntur aperiam. Lorem
-          ipsum dolor sit, amet consectetur adipisicing elit. Voluptates libero,
-          alias reprehenderit aut debitis eos vero, odio recusandae nam quisquam
-          ipsum sunt nostrum assumenda. Non dolorum reiciendis amet consequuntur
-          aperiam. Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-          Voluptates libero, alias reprehenderit aut debitis eos vero, odio
-          recusandae nam quisquam ipsum sunt nostrum assumenda. Non dolorum
-          reiciendis amet consequuntur aperiam. Lorem ipsum dolor sit, amet
-          consectetur adipisicing elit. Voluptates libero, alias reprehenderit
-          aut debitis eos vero, odio recusandae nam quisquam ipsum sunt nostrum
-          assumenda. Non dolorum reiciendis amet consequuntur aperiam. Lorem
-          ipsum dolor sit, amet consectetur adipisicing elit. Voluptates libero,
-          alias reprehenderit aut debitis eos vero, odio recusandae nam quisquam
-          ipsum sunt nostrum assumenda. Non dolorum reiciendis amet consequuntur
-          aperiam.
-        </p>
+      <v-col class="d-flex align-center justify-center col-size">
+        <span>
+          <v-card-title class="text-center bold-title">About Us</v-card-title>
+          <v-card-text class="text-center description-content">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin eget
+            tortor feugiat, euismod arcu ac, tristique felis. Vivamus interdum
+            purus vitae eros tincidunt hendrerit. Suspendisse sit amet leo ut
+            enim hendrerit vehicula eu ac orci.
+          </v-card-text>
+        </span>
       </v-col>
     </v-row>
   </v-container>
@@ -74,6 +19,17 @@
 <script>
 export default {};
 </script>
-  
-  <style>
+<style>
+.col-size {
+  height: 600px
+}
+.bold-title {
+  font-size: 60px !important;
+  line-height: 1.02em !important;
+  margin-bottom: 15px;
+}
+.description-content {
+  font-size: 18px !important;
+  line-height: 26px;
+}
 </style>

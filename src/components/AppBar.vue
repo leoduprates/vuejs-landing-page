@@ -6,7 +6,7 @@
     class="elevation-0"
     :style="{ backgroundColor: bgColor }"
   >
-    <v-toolbar-title>My Landing Page</v-toolbar-title>
+    <v-toolbar-title>Landing Page</v-toolbar-title>
     <v-spacer></v-spacer>
     <v-btn text v-scroll-to="{ el: '#section1' }">Section 1</v-btn>
     <v-btn text v-scroll-to="{ el: '#section2' }">Section 2</v-btn>
