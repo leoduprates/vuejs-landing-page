@@ -1,6 +1,6 @@
 <template>
-  <v-container id="section1">
-    <v-row>
+  <v-container class="background-container" id="aboutSection">
+    <v-row class="row-header">
       <v-col class="d-flex align-center justify-center col-size" lg="6">
         <span>
           <h3 class="bold-title">
@@ -15,7 +15,7 @@
         </span>
       </v-col>
       <v-col class="d-flex align-center justify-center" lg="6">
-        <img :src="require(`../../assets/head.png`)" />
+        <img :src="require(`../../assets/mobile-mockup.png`)" />
       </v-col>
     </v-row>
   </v-container>
@@ -26,13 +26,27 @@ export default {};
 </script>
   
 <style>
+.v-container {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+.background-container {
+  background: url('../../assets/header.jpg');
+  background-size: cover;
+  background-position: center;
+}
+.row-header {
+  color: #ffffff;
+  padding: 80px;
+}
 .col-size {
-  height: 600px
+  padding: 40px;
+  height: 600px;
 }
 .bold-title {
   font-size: 60px;
   line-height: 1.02em !important;
-  margin-bottom: 15px;
+  margin-bottom: 0 !important;
 }
 .description-content {
   font-size: 18px;

@@ -1,6 +1,6 @@
 <template>
-  <v-container>
-    <v-card color="#241b4a" class="banner-section" id="section3">
+  <v-container id="slideSection">
+    <v-card color="#f05365" class="banner-section row-panding" id="section3">
       <v-row>
         <v-col class="d-flex align-center justify-center" cols="6">
           <span>
@@ -17,7 +17,7 @@
         </v-col>
         <v-col class="d-flex align-center justify-center" cols="6">
           <v-img
-            :src="require(`../../assets/head.png`)"
+            :src="require(`../../assets/picture_placeholder.png`)"
             height="90%"
             width="90%"
           ></v-img>
@@ -32,6 +32,9 @@
 export default {};
 </script>
 <style>
+.row-panding {
+  margin: 40px;
+}
 .banner-section {
   color: #ffffff;
   border-radius: 25px;

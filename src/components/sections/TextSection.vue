@@ -1,9 +1,9 @@
 <template>
-  <v-container id="section2">
+  <v-container id="textSection">
     <v-row>
       <v-col class="d-flex align-center justify-center col-size">
         <span>
-          <v-card-title class="text-center bold-title">About Us</v-card-title>
+          <v-card-title class="text-center bold-title">Lorem Ipsum</v-card-title>
           <v-card-text class="text-center description-content">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin eget
             tortor feugiat, euismod arcu ac, tristique felis. Vivamus interdum

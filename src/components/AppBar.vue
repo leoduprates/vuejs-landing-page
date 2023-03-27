@@ -1,17 +1,19 @@
 <template>
   <v-app-bar
     app
-    fixed
+    flex
     ref="appBar"
     class="elevation-0"
+    :class="{'app-bar--scrolled': scrolled, 'app-bar-no-scrolled': noScrolled}"
     :style="{ backgroundColor: bgColor }"
   >
     <v-toolbar-title>Landing Page</v-toolbar-title>
     <v-spacer></v-spacer>
-    <v-btn text v-scroll-to="{ el: '#section1' }">Section 1</v-btn>
-    <v-btn text v-scroll-to="{ el: '#section2' }">Section 2</v-btn>
-    <v-btn text v-scroll-to="{ el: '#section3' }">Section 3</v-btn>
-    <v-btn text v-scroll-to="{ el: '#section4' }">Section 4</v-btn>
+    <v-btn text v-scroll-to="{ el: '#aboutSection' }">About</v-btn>
+    <v-btn text v-scroll-to="{ el: '#textSection' }">Text</v-btn>
+    <v-btn text v-scroll-to="{ el: '#slideSection' }">Slide</v-btn>
+    <v-btn text v-scroll-to="{ el: '#cardsSection' }">Cards</v-btn>
+    <v-btn text v-scroll-to="{ el: '#testimonialSection' }">Testimonial</v-btn>
   </v-app-bar>
 </template>
     
@@ -21,6 +23,8 @@ export default {
     return {
       bgColor: "transparent",
       lastScrollTop: 0,
+      scrolled: true,
+      noScrolled: false
     };
   },
   mounted() {
@@ -37,8 +41,12 @@ export default {
         document.body.scrollTop ||
         0;
       if (scrollTop > this.lastScrollTop) {
+        this.scrolled = false
+        this.noScrolled = true
         this.bgColor = "#ffffff";
       } else {
+        this.scrolled = true
+        this.noScrolled = false
         this.bgColor = "transparent";
       }
       this.lastScrollTop = scrollTop <= 0 ? 0 : scrollTop;
@@ -50,6 +58,12 @@ export default {
 .v-toolbar__content {
   transition: background-color 0.3s ease-out;
   box-shadow: none;
+}
+.app-bar--scrolled {
+  color: white !important; /* change to your desired font color */
+}
+.app-bar--no-scrolled {
+  color: black !important; /* change to your desired font color */
 }
 .v-container {
   padding-top: 50px;
